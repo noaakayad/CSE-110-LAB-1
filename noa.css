@@ -1,89 +1,160 @@
+.img_top img{
+	max-width: 100%;
+}
+
+
 .S1{
 	display: inline-block;
 	background-color: rgb(245, 240, 230);
 	width : 100%;
 }
 
+.S1 h2{
+	padding : 20px;
+}
+
+.S1 img{
+	max-width: 100%;
+	padding : 20px;
+}
+
+.S1 p{
+	padding : 20px;
+}
+
+
 .S2{
 	background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
-	
-	h2{
-		color: white;
-	}
-
-	p{
-		color : white;
-	}
-
 	display : inline-block;
+}
+
+.S2 img{
+	max-width : 100%;
+	padding : 20px;
+}
+
+.S2 h2 {
+	color : white;
+	padding : 20px;
+}
+
+.S2 p{
+	color : white;
+	padding : 20px;
 }
 
 
 .navbar {
-	li{
-		display : inline-block;
-	}
-
-	a{
-		display : block;
-		font-size: 28px;
-		padding : 8px;
-		text-decoration : none;
-	}
-
-	li :hover{
-		background-color: #182b49;
-		color : white;
-	} 
-
 	position : sticky;
 	top: 0;
 	overflow: hidden;
 	max-width: 400px;
 }
 
-.Section3 {
+.navbar li{
+	display : inline-block;
+}
+
+.navbar li :hover{
+	background-color: #182b49;
+	color : white;
+}
+
+.navbar a{
+	display : block;
+	font-size : 28px;
+	padding : 8px;
+	text-decoration : none;
+}
+
+
+.S3{
 	display : inline-block;
 	background-color: rgb(245, 240, 230);
 	width : 100%;
 }
 
-.S3{
+.S3 h2{
+	padding : 20px;
+}
+
+.grid_S3{
 	display : grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap : 25px;
 	background-color: rgb(245, 240, 230);
+	padding : 20px;
 }
 
-.p1{
+.grid_S3 .p1{
 	background-color: #182b49;
 	max-height: 500px;
 	overflow: scroll;
 	color : white;
+	padding : 10px;
 }
 
-.p2{
+.grid_S3 .p2{
 	background-color: #182b49;
 	max-height: 500px;
 	overflow: scroll;
 	color : white;
+	padding : 10px;
 }
 
-.p3{
+.grid_S3 .p3{
 	background-color: #182b49;
 	max-height: 500px;
 	overflow: scroll;
 	color : white;
+	padding : 10px;
 }
 
-.p4{
+.grid_S3 .p4{
 	background-color: #182b49;
 	max-height: 500px;
 	overflow: scroll;
 	color : white;
+	padding : 10px;
 }
 
+@media (max-width: 800px){
+	.navbar a{
+		display : none;
+	}
 
+	.img_top img{
+		max-width: 75%;
+	}
+
+	.S1 h2{
+		font-size: 24px;
+	}
+
+	.S2 h2{
+		font-size: 24px;
+	}
+
+	.S3 h2{
+		font-size: 24px;
+	}
+
+	.S1 p{
+		font-size: 20px;
+	}
+
+	.S2 p{
+		font-size: 20px;
+	}
+
+	.grid_S3 p{
+		font-size: 20px;
+	}
+
+	.grid_S3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
 
 
