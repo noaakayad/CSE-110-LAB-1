@@ -1,1 +1,1 @@
-# CSE-110-LAB-1
+# Prototype Web Page of the ucsd.edu Homepage
